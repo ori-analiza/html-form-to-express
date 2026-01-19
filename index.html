@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form example</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      html {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="http://localhost:3000/register" method="POST">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
